@@ -1,0 +1,29 @@
+DATSET_PATH:
+  ROOT: /home/ou/Documents/dataset/my_kitti
+    -IMAGE_SETS: ImageSets
+      -TRAIN: train.txt
+      -VAL: val.txt
+      -SPLIT: training
+        -CALIB: calib
+        -IMAGE_2: image_2
+        -LABEL_2: label_2
+        -LIDAR: velodyne
+
+#TOPIC:
+#  - NAME: '/excavator/LiDAR_80_1'
+#    TYPE: PointCloud2
+#  - NAME: '/excavator/LiDAR_32_1'
+#    TYPE: PointCloud2
+#  - NAME: '/excavator/LiDAR_16_1'
+#    TYPE: PointCloud2
+#  - NAME: '/excavator/LiDAR_16_2'
+#    TYPE: PointCloud2
+#  - NAME: '/excavator/gt_pose/base_link'
+#    TYPE: Odometry
+
+#DATA_PROCESS:
+#  BASE: '/excavator/LiDAR_80_1'
+#  ROI:
+#    X: [ -50,50 ]
+#    Y: [ -50,50 ]
+#    Z: [ -5,9 ]
